@@ -1,0 +1,48 @@
+Inception
+- Obtain Project Charter. (who and why sponsors the initiative)
+- Obtain Stakeholders. (positive and negative)
+- Obtain Key Objectives.
+- Identify Performance Requirements.
+
+Plan
+- Obtain high level project plan and key milestones.
+- Obtain high level architecture and technology stack.
+- Obtain high level volume information (including data volume).
+- Obtain high level performance targets. (KPI's / SLA's)
+- Define team resources.
+- Define infrastructure resources.
+- Define load testing scenarios.
+- Identify risks, define mitigation and contingency plans.
+- Define entry and acceptance criteria for performance testing.
+- Create performance testing engagement plan.
+
+Design
+- Obtain baseline volume and performance information by either (in order of preference):
+> Extracting transactional volume and performance metrics from observability in production.
+> Obtaining expected volume from technical architecture or business stakeholders (new applications / features)
+> Extrapolating transactional volumes from business analytics, application logs, audit tables...
+> Defining volume and metrics expectations with business and technical stakeholders.
+- Identify or define a performance testing environment and its scaling to production.
+> Define and execute strategy for uniform scaling of system components.
+> Define and execute strategy for database uniform and representative data scaling.
+- Develop test data strategy. (generation, extraction and / or virtualization).
+- Map transactions to user flows.
+- Prioritize user flows and transactions, define transactions in scope.
+- Define final transaction mix and test flows.
+
+Develop
+- Script.
+> Record or develop script.
+> Conduct parameterization and correlation.
+- Validate and refine scripts.
+> validate scripts against multiple iterations and concurrent threads.
+> validate results against target baseline.
+- Create and validate pipeline jobs, integrate to CI / CD platform (optional, recommended)
+
+Execute (iterative)
+- Execute and monitor load tests.
+- Analyze and report results.
+> create defects and validate resolution.
+- Support performance optimization and troubleshooting.
+- Obtain sign off and define new baseline.
+- Close engagement.
